@@ -1,8 +1,15 @@
 body {
-  margin: 0
+  margin: 0;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+/* NAVIGATION BAR */
+
 .navbar ul {
+  background-color: white;
   list-style: none;
   margin: 0;
   padding: 15px;
@@ -26,4 +33,10 @@ body {
 
 .navbar a:hover {
   font-weight: bold;
+}
+
+/* MAIN PANEL */
+
+.main {
+  background-color: white;
 }
