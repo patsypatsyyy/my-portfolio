@@ -1,0 +1,32 @@
+body {
+  margin: 0
+}
+
+.navbar ul {
+  list-style: none;
+  background: #687EFF;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  width: 125px;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif ;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
