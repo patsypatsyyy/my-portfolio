@@ -39,7 +39,6 @@ body {
 
 #profile {
   z-index: 9;
-  float: right;
   height: 500px;
   width: 500px;
 }
@@ -48,19 +47,20 @@ body {
   display: flex;
   position: relative;
   margin-top: 30px;
-
 }
 
-.main .mainborder{
+.center{
+  display: flex;
   justify-content: center;
+  align-items: center; 
 }
 
 .mainborder {
   position: absolute;
+  text-align: center;
   bottom: 0;
   background-color: #30475E;
   height: 425px;
-  margin: 0;
   outline: 10px solid white;
   width: 1050px;
 }
