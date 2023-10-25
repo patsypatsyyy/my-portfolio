@@ -13,7 +13,7 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   list-style: none;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
   text-align: right;
 }
 
@@ -24,15 +24,17 @@ body {
 .navbar a {
   color: black;
   display: block;
-  font-family: 'Roboto', sans-serif ;
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
-  width: 100px;
+  width: 80px;
 }
 
 .navbar a:hover {
-  font-weight: bold;
+  color: #30475E;
+  font-weight: 500;
 }
 
 /* MAIN PANEL */
@@ -115,5 +117,5 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.90);
+  transform: scale(0.95);
 }
