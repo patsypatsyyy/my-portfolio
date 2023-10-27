@@ -8,35 +8,27 @@ body {
 
 /* NAVIGATION BAR */
 
-.navbar ul {
+.navbar {
   background-color: white;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  display: flex;
+  justify-content: right;
   list-style: none;
   margin: 0;
-  padding: 20px;
-  text-align: right;
-}
-
-.navbar li {
-  display: inline-block;
+  padding: 0;
+  width: 100%;
 }
 
 .navbar a {
-  color: black;
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
   text-decoration: none;
-  transition-duration: 0.2s;
-  width: 80px;
+  color: #30475E;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-.navbar a:hover {
-  color: #30475E;
-  font-weight: 900;
-}
+.navbar a:hover {color: white;}
+.navbar li {padding: 15px; transition-duration: 0.2s}
+.navbar li:hover {background-color: #30475E;}
 
 /* MAIN PANEL */
 
