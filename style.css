@@ -56,7 +56,6 @@ body {
 }
 
 .imageholder {
-  background-color: limegreen;
   position: relative;
   width: 50%;
   height: 100%;
@@ -64,6 +63,6 @@ body {
 
 .profile {
   float: left;
-  height: 65%;
-  width: 65%;
+  height: 100%;
+  width: 100%;
 }
