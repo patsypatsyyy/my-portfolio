@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  position: relative;
 }
 
 /* NAVIGATION BAR */
@@ -16,6 +17,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
   width: 100%;
 }
 
@@ -30,101 +32,38 @@ body {
 .navbar li {padding: 15px; transition-duration: 0.2s}
 .navbar li:hover {background-color: #30475E;}
 
-/* MAIN PANEL */
-
-.main {
-  display: flex;
-  position: relative;
-  margin-top: 30px;
-}
+/* HOME PANEL */
 
 .center{
   display: flex;
   justify-content: center; 
 }
 
-.holder {
+.main {
+  background-color: lime;
+  margin: 3.5% 0 0 0;
+  padding: 0;
   position: relative;
-  width: 1025px;
+  height: 100%;
+  width: 100%;
+}
+
+.holder {
+  background-color: green;
+  height: 100%;
+  position: relative;
+  width: 75%;
 }
 
 .imageholder {
-  z-index: 1;
+  background-color: limegreen;
   position: relative;
-  width: 1025px;
-}
-
-#profile {
-  float: left;
-  height: 500px;
-  width: 500px;
-}
-
-.styleborder {
-  background-color: #30475E;
-  bottom: 0;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  height: 425px;
-  outline: 10px solid white;
-  position: absolute;
-  width: 1025px;
-}
-
-.infos h1 {
-  font-size: 47px; 
-  font-weight: 500;
-  margin-bottom: 0px;
-  margin-top: 100px;
-}
-
-.infos h2 {
-  font-size: 20px; 
-  font-weight: 400;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-
-.infos {
-  z-index: 9;
-  float: right;
-  color: white;
-  float: right;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  width: 650px;
+  width: 50%;
   height: 100%;
 }
 
-button {
-  background-color: #F05454;
-  border: none;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  height: 50px;
-  width: 150px;
-  transition-duration: 0.1s;
-}
-
-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 30px 0 rgba(0,0,0,0.19);
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-.links {
-  margin-top: 80px;
-}
-
-.links img{
-  height: 50px;
-  margin-inline: 5px;
-  transition-duration: 0.1s;
-  width: 50px;
-}
-
-.links img:hover {
-  transform: scale(1.25);
+.profile {
+  float: left;
+  height: 65%;
+  width: 65%;
 }
