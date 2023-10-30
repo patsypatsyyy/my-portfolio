@@ -40,8 +40,8 @@ body {
 }
 
 .main {
-  background-color: lime;
-  margin: 3.5% 0 0 0;
+/*  background-color: lime;*/
+  margin: 1.5% 0 0 0;
   padding: 0;
   position: relative;
   height: 100%;
@@ -49,7 +49,7 @@ body {
 }
 
 .holder {
-  background-color: green;
+/*  background-color: green;*/
   height: 100%;
   position: relative;
   width: 75%;
@@ -57,12 +57,25 @@ body {
 
 .imageholder {
   position: relative;
+  bottom: 0;
   width: 50%;
   height: 100%;
+  z-index: 2;
 }
 
 .profile {
   float: left;
   height: 100%;
   width: 100%;
+}
+
+.styleborder {
+  background-color: #30475E;
+  bottom: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  outline: 5px solid white;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  z-index: 1;
 }
