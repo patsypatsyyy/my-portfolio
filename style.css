@@ -1,7 +1,5 @@
 body {
-  background-attachment: fixed;
-  background-image: url('elements/images/background.jpg');
-  background-repeat: no-repeat;
+  background: url('elements/images/background.jpg') no-repeat fixed;
   background-size: cover;
   margin: 0;
   position: relative;
@@ -43,12 +41,12 @@ body {
   margin: 1.5% 0 0 0;
   padding: 0;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
 }
 
 .holder {
-  height: 100%;
+  height: inherit;
   position: relative;
   width: 75%;
 }
@@ -82,7 +80,7 @@ body {
   height: 100%;
   position: absolute;
   right: 0;
-  width: 65%;
+  width: 63.25%;
 }
 
 .titles {
@@ -98,7 +96,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5vw;
   font-weight: 500;
-  margin: 15% 0 1% 0;
+  margin: 17% 0 0 0;
   position: relative;
 }
 
@@ -107,7 +105,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5vw;
   font-weight: 300;
-  margin: 0;
+  margin: 1% 0 0 0;
   position: relative;
 }
 
@@ -119,7 +117,7 @@ body {
   font-size: 1.25vw;
   font-weight: 400;
   height: 15%;
-  margin: 5% 0 0 0;
+  margin: 2.5% 0 0 0;
   transition-duration: 0.1s;
   width: 22%;
 }
@@ -134,17 +132,17 @@ body {
 
 .links {
   bottom: 0;
-  height: 20%;
+  height: 16.5%;
   text-align: center;
   position: absolute;
   width: 100%;
 }
 
 .links img{
-  height: 60%;
-  margin-inline: 1%;
+  height: 70%;
+  margin-inline: 0.5%;
   transition-duration: 0.1s;
-  width: 7.5%;
+  width: 7.45%;
 }
 
 .links img:hover {
