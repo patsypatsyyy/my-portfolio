@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('elements/images/background.jpg') no-repeat fixed;
+  background: url('elements/images/background.jpg') no-repeat scroll;
   background-size: cover;
   margin: 0;
 }
@@ -50,7 +50,7 @@ body {
   width: inherit;
 }
 
-.holder {
+.home_container {
   height: inherit;
   position: relative;
   width: 75%;
