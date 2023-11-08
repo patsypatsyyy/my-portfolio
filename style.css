@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url('elements/images/background.jpg') no-repeat scroll;
   background-size: cover;
@@ -13,15 +17,18 @@ body {
   justify-content: right;
   list-style: none;
   margin: 0;
+  top: 0;
   padding: 0;
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .navbar a {
   text-decoration: none;
   color: #30475E;
   font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -37,7 +44,7 @@ body {
 }
 
 .home {
-  margin: 1.5% 0 0 0;
+  padding-top: 5%;
   position: relative;
   height: inherit;
   width: inherit;
@@ -151,14 +158,14 @@ img.home_profile {
 
 .about_me {
   background-color: #30475E;
-  height: 1000px;
+  height: 50vw;
   margin-top: 10%;
   width: 100%;
 }
 
 .am_container {
-  height: 90%;
-  margin-top: 3%;
+  height: 85%; 
+  margin-top: 6.5%;
   text-align: center;
   width: 80%;
 }
@@ -175,7 +182,7 @@ img.home_profile {
 .am_content_container {
   background-color: white;
   position: relative;
-  height: 47.5%;
+  height: 62.5%;
   width: 90%;
   margin: auto;
 }
@@ -247,3 +254,4 @@ img.am_image_container {
   line-height: 125%;
   margin-top: 3%;
 }
+
