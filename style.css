@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* NAVIGATION BAR */
 
 .navbar {
@@ -68,8 +73,6 @@ img.home_profile {
   float: left;
   height: 100%;
   width: 100%;
-  user-select: none;
-  -webkit-user-drag: none;
 }
 
 .styleborder {
@@ -130,7 +133,7 @@ img.home_profile {
 }
 
 .home_titles button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 30px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 10px #222;
   cursor: pointer;
 }
 
@@ -170,7 +173,7 @@ img.home_profile {
 
 .am_container {
   height: 85%; 
-  margin-top: 6.5%;
+  margin-top: 7.5%;
   text-align: center;
   width: 80%;
 }
@@ -182,10 +185,12 @@ img.home_profile {
   font-weight: 500;
   margin-bottom: 1%;
   position: relative;
+  z-index: 9;
 }
 
 .am_content_container {
   background-color: white;
+  box-shadow: 0 5px 20px #1E1E1E;
   position: relative;
   height: 62.5%;
   width: 90%;
@@ -312,7 +317,7 @@ div.am_info {
   width: 1.15vw;
 }
 
-#am_info_email_icon {
+#am_info_email_icon { 
   position: absolute;
   left: 6.5%;
   top: 35%;
@@ -360,3 +365,43 @@ div.am_info {
   top: 35%;
   margin: 0;
 }
+
+/* SKILLS */
+
+.skills {
+  background-color: white;
+  height: 200vh;
+  position: relative;
+  width: 100%;
+}
+
+.skills_container h1 {
+  color: #30475E;
+  font: 500 3vw 'Montserrat', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.skills_container {
+  margin-top: 8%;
+  text-align: center;
+  height: 80%;
+  width: 80%;
+}
+
+.skills_content_container {
+  background-color: #30475E;
+  border: 0.5vw solid white;
+  margin: auto;
+  margin-top: 2.5%;
+  height: 90%;
+  width: 90%;
+}
+
+.skills_content_container h1 {
+  color: white;
+  margin: 3% 0 0 3%;
+  text-align: left;
+  font: 500 4vh 'Rubik', sans-serif;
+}
+
