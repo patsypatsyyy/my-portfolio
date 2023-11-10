@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  background: url('elements/images/background.jpg') no-repeat scroll;
-  background-size: cover;
   margin: 0;
 }
 
@@ -370,38 +368,44 @@ div.am_info {
 
 .skills {
   background-color: white;
-  height: 200vh;
+  height: 100vh;
   position: relative;
   width: 100%;
 }
 
-.skills_container h1 {
+div.skills_container {
+  margin-top: 5%;
+  width: 100%;
+}
+
+h1.skills_container {
   color: #30475E;
-  font: 500 3vw 'Montserrat', sans-serif;
-  margin: 0;
+  font: 500 8vh 'Montserrat', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 11.5%;
+}
+
+div.skills_content_container {
+  box-shadow: 0 5px 15px rgb(63, 63, 63);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  margin: 5% 5% 0 0;
+  height: 75%;
+  width: 60%;
+}
+
+h1.skills_content_container {
+  color: #30475E;
+  font: 300 3vh 'Rubik', sans-serif;
   text-align: center;
 }
 
-.skills_container {
-  margin-top: 8%;
-  text-align: center;
-  height: 80%;
-  width: 80%;
-}
-
-.skills_content_container {
-  background-color: #30475E;
-  border: 0.5vw solid white;
+#python {
+  background-color: lime;
+  margin-top: 10%;
   margin: auto;
-  margin-top: 2.5%;
-  height: 90%;
-  width: 90%;
+  height: 15%;
+  width: 25%;
 }
-
-.skills_content_container h1 {
-  color: white;
-  margin: 3% 0 0 3%;
-  text-align: left;
-  font: 500 4vh 'Rubik', sans-serif;
-}
-
