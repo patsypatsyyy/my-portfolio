@@ -3,6 +3,9 @@ html {
 }
 
 body {
+  background-image: url('elements/images/background.png');
+  background-attachment: scroll;
+  background-size: cover;
   margin: 0;
 }
 
@@ -36,7 +39,7 @@ img {
 }
 
 .navbar a:hover {color: white;}
-.navbar li {padding: 15px; transition-duration: 0.2s}
+.navbar li {padding: 1vw; transition-duration: 0.2s}
 .navbar li:hover {background-color: #30475E;}
 
 /* HOME PANEL */
@@ -164,16 +167,16 @@ img.home_profile {
 
 .about_me {
   background-color: #30475E;
-  height: 50vw;
+  height: 100vh;
   margin-top: 10%;
   width: 100%;
 }
 
 .am_container {
-  height: 85%; 
-  margin-top: 7.5%;
+  height: 100%; 
+  margin-top: 5%;
   text-align: center;
-  width: 80%;
+  width: 95%;
 }
 
 .am_container h1 {
@@ -398,7 +401,7 @@ div.skills_content_container {
 
 h1.skills_content_container {
   color: #30475E;
-  font: 300 3vh 'Rubik', sans-serif;
+  font: 400 3vh 'Rubik', sans-serif;
   text-align: center;
 }
 
