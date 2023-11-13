@@ -243,7 +243,7 @@ img.am_image_container {
 
 .am_text_container {
   position: absolute;
-  top: 3%;
+  top: 1%;
   right: 5%;
   height: 90%;
   width: 53.5%;
@@ -261,7 +261,7 @@ img.am_image_container {
 .am_text_container h1{
   text-align: right;
   color: #30475E;
-  font-size: 1.7vw;
+  font-size: 4.45vh;
   margin-top: 8%;
 }
 
@@ -269,7 +269,7 @@ img.am_image_container {
   color: #575757;
   text-align: right;
   font-family: 'Rubik', sans-serif;
-  font-size: 1vw;
+  font-size: 2.25vh;
   line-height: 125%;
   margin-top: 3%;
 }
@@ -291,7 +291,7 @@ div.am_info {
 #am_info_email {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 5%;
 }
 
 #am_info_age {
@@ -303,7 +303,7 @@ div.am_info {
 #am_info_phone {
   position: absolute;
   left: 68%;
-  top: 10%;
+  top: 5%;
 }
 
 .am_info img {
@@ -321,7 +321,7 @@ div.am_info {
 #am_info_email_icon { 
   position: absolute;
   left: 6.5%;
-  top: 35%;
+  top: 32%;
   height: 1.15vw;
   width: 1.15vw;
 }
@@ -336,7 +336,7 @@ div.am_info {
 #am_info_phone_icon {
   position: absolute;
   right: 32.5%;
-  top: 35%;
+  top: 32%;
   height: 1.15vw;
   width: 1.15vw;
 }
@@ -350,7 +350,7 @@ div.am_info {
 #am_info_email_input {
   position: absolute;
   left: 23%;
-  top: 35%;
+  top: 30%;
   margin: 0;
 }
 
@@ -363,7 +363,7 @@ div.am_info {
 #am_info_phone_input {
   position: absolute;
   left: 80%;
-  top: 35%;
+  top: 30%;
   margin: 0;
 }
 
