@@ -33,7 +33,7 @@ body {
 }
 
 .navbar a:hover {color: white;}
-.navbar li {padding: 15px; transition-duration: 0.2s}
+.navbar li {padding: 1vw; transition-duration: 0.2s}
 .navbar li:hover {background-color: #30475E;}
 
 /* HOME PANEL */
@@ -198,6 +198,7 @@ img.home_profile {
   bottom: 0;
   height: 130%;
   width: 40%;
+
 }
 
 img.am_image_container {
@@ -206,6 +207,11 @@ img.am_image_container {
   width: 100%;
   object-fit: cover;
   filter: drop-shadow(2px 2px 5px #222);
+  transition-duration: 0.5s;
+}
+
+img.am_image_container:hover {
+  height: 101%;
 }
 
 .am_profile_design {
@@ -360,3 +366,67 @@ div.am_info {
   top: 35%;
   margin: 0;
 }
+
+/* SKILLS PAGE */
+
+.skills {
+  background-image: url('elements/images/1329893.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 50vw;
+  position: relative;
+  width: 100%;
+}
+
+div.skills_container {
+  margin-top: 5%;
+  width: 100%;
+}
+
+h1.skills_container {
+  color: #30475E;
+  font: 500 4vw 'Montserrat', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 11.5%;
+}
+
+div.skills_content_container {
+  background-color: white;
+  box-shadow: 0 5px 15px rgb(63, 63, 63);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  margin: 5% 5% 0 0;
+  height: 75%;
+  width: 60%;
+}
+
+h1.skills_content_container {
+  margin-bottom: 15%;
+  color: #30475E;
+  font: 400 1.5vw 'Rubik', sans-serif;
+  text-align: center;
+}
+
+img.skill_icons {
+  text-align: center;
+  height: 8vw;
+  width: 8vw;
+}
+
+div.skill_blocks {
+  display: inline-flex;
+  margin-inline: 4%;
+  margin-top: 1%;
+  height: 20%;
+  width: 13%;
+  transition-duration: 0.5s;
+}
+
+div.skill_blocks:hover {
+  background-color: lime;
+  width: 27%;
+}
+
