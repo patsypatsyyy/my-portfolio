@@ -10,6 +10,7 @@ body {
 /* NAVIGATION BAR */
 
 .navbar {
+  background-color: #181823;
   display: flex;
   justify-content: right;
   list-style: none;
@@ -45,16 +46,57 @@ body {
   width: 100%;
 }
 
+#home_design_container {
+  /* background-color: lime; */
+  height: 80%;
+  width: 95%;
+  position: relative;
+    margin-top: 5%;
+    margin-inline: auto;
+}
+
 #home_design_1 {
-  background-color: #537FE7;
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
-  overflow: hidden;
   position: absolute;
     top: 0;
     left: 0;
-  height: 100%;
-  width: 50%;
+  height: 80%;
+  width: 91.5%;
+  border: 1vw solid #537FE7;
+  border-radius: 5vw;
+  border-style: inset none none inset;
+}
+
+#home_design_2 {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+  height: 80%;
+  width: 91.5%;
+  border: 1vw solid #537FE7;
+  border-radius: 5vw;
+  border-style: none inset inset none;
+}
+
+#home_design_3 {
+  position: absolute;
+    top: 4%;
+    left: 1.75%;
+  height: 76%;
+  width: 89.7%;
+  border: 1vw solid #537FE7;
+  border-radius: 4vw;
+  border-style: inset none none inset;
+}
+
+#home_design_4 {
+  position: absolute;
+    bottom: 4%;
+    right: 1.75%;
+  height: 76%;
+  width: 89.5%;
+  border: 1vw solid #537FE7;
+  border-radius: 4vw;
+  border-style: none inset inset none;
 }
 
 div.home_container {
@@ -72,6 +114,7 @@ img.home_container {
     bottom: 0;
     left: 0;
   height: 48vw;
+  width: 48vw;
   z-index: 2;
 }
 
@@ -86,13 +129,13 @@ img.home_container {
 }
 
 .home_headings h1 {
-  color: #E9F8F9;
+  color: white;
   font: 500 4.15vw "Poppins", sans-serif;
   margin: 1vw 0 0 0;
 }
 
 .home_headings p {
-  color: #E9F8F9;
+  color: white;
   font: 300 1.15vw "Poppins", sans-serif;
   margin: 0 0 0 1vw;
 }
@@ -103,6 +146,7 @@ img.home_container {
   font: 300 1vw "Poppins", sans-serif;
   margin-top: 3%;
   border: none;
+  border-radius: 2vw;
   transition-duration: 0.1s;
   height: 10%;
   width: 20%;
@@ -116,3 +160,24 @@ img.home_container {
   .home_headings button:active {
     transform: scale(1.0);
   }
+
+.home_links {
+  margin-top: 3%;
+  height: 10%;
+  width: 100%;
+}
+
+.home_links a {
+  display: inline;
+  margin-inline: 0.5%;
+}
+
+.home_links img {
+  height: 3vw;
+  width: 3vw;
+  transition-duration: 200ms;
+}
+
+.home_links img:hover {
+  transform: scale(1.2);
+}
