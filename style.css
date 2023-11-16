@@ -68,7 +68,7 @@ body {
 } */
 
 #home_design_1 {
-  border: 3vw solid #4163b3;
+  border: 1vw solid #4163b3;
   border-style: none inset none none;
   position: absolute;
     top: 0;
@@ -78,12 +78,12 @@ body {
 }
 
 #home_design_2 {
-  border: 3vw solid #537FE7;
+  border: 1vw solid #537FE7;
   border-style: solid none none none;
   position: absolute;
     right: 0;
     bottom: 0%;
-  height: 35vw;
+  height: 37vw;
   width: 100%;
 } 
 
@@ -127,3 +127,23 @@ img.home_container {
   font: 300 1.15vw "Poppins", sans-serif;
   margin: 0 0 0 1vw;
 }
+
+.home_headings button{
+  background-color: #537FE7;
+  color: #E9F8F9;
+  font: 300 1vw "Poppins", sans-serif;
+  margin-top: 3%;
+  border: none;
+  transition-duration: 0.1s;
+  height: 10%;
+  width: 20%;
+}
+
+  .home_headings button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .home_headings button:active {
+    transform: scale(1.0);
+  }
