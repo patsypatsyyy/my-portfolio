@@ -7,10 +7,9 @@ body {
   padding: 0;
 }
 
-/* NAVIGATION BAR */
+/* ----------------------- NAVIGATION ----------------------- */
 
 .navbar {
-  background-color: #181823;
   display: flex;
   justify-content: right;
   list-style: none;
@@ -24,6 +23,7 @@ body {
 }
 
 .navbar a {
+  background-color: #181823;
   text-decoration: none;
   color: #E9F8F9;
   font-family: 'Poppins', sans-serif;
@@ -46,8 +46,7 @@ body {
   width: 100%;
 }
 
-#home_design_container {
-  /* background-color: lime; */
+.home_design_container {
   height: 80%;
   width: 95%;
   position: relative;
@@ -93,7 +92,7 @@ body {
     bottom: 4%;
     right: 1.75%;
   height: 76%;
-  width: 89.5%;
+  width: 89.75%;
   border: 1vw solid #537FE7;
   border-radius: 4vw;
   border-style: none inset inset none;
@@ -110,34 +109,38 @@ div.home_container {
 }
 
 img.home_container {
+  border: 1vw solid #537FE7;
+    border-radius: 100%;
+    border-style: inset;
   position: absolute;
-    bottom: 0;
-    left: 0;
-  height: 48vw;
-  width: 48vw;
+    bottom: 90%;
+    left: 6%;
+  height: 30vw;
+  width: 30vw;
   z-index: 2;
 }
 
 .home_headings {
+  /* background-color: lime; */
   position: absolute;
     bottom: 0;
     right: 3%;
-  height: 350%;
-  width: 60%;
-  text-align: right;
+  height: 335%;
+  width: 50%;
+  text-align: left;
   z-index: 2;
 }
 
 .home_headings h1 {
   color: white;
-  font: 500 4.15vw "Poppins", sans-serif;
-  margin: 1vw 0 0 0;
+  font: 500 4vw "Patua One", sans-serif;
+  margin: 0;
 }
 
 .home_headings p {
   color: white;
-  font: 300 1.15vw "Poppins", sans-serif;
-  margin: 0 0 0 1vw;
+  font: 300 1vw "Poppins", sans-serif;
+  margin: 0;
 }
 
 .home_headings button{
@@ -180,4 +183,12 @@ img.home_container {
 
 .home_links img:hover {
   transform: scale(1.2);
+}
+
+/* ----------------------- ABOUT PAGE ----------------------- */
+
+.about {
+  background-color: #181823;
+  height: 50vw;
+  width: 100%;
 }
