@@ -6,6 +6,7 @@ body {
   background-color: #181823;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 img {
@@ -199,72 +200,22 @@ img.home_container {
 
 /* ----------------------- ABOUT PAGE ----------------------- */
 
-.about {
-  background-color: #181823;
-  height: 35vw;
+section.about {
+  background-image: url("elements/images/night_time_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25vw;
   width: 100%;
   margin-top: 5%;
   padding-top: 5%;
 }
 
-.about_design_container {
-  overflow: hidden;
-  position: relative;
-  height: 23vw;
-  width: 100%;
-}
-
-#about_design_1 {
-  position: absolute;
-    left: 0;
-  height: 30%;
-  width: 100%;
-  border: 1vw solid #537FE7;
-    border-style: inset none none none;
-}
-
-#about_design_2 {
-  position: absolute;
-    left: 0;
-    right: 0;
-    top: 7%;
-    margin: 0 auto;
-  height: 30%;
-  width: 80%;
-  border: 1vw solid #537FE7;
-    border-style: inset none none none;
-}
-
-#about_design_3 {
-  position: absolute;
-    right: 0;
-    bottom: 0;
-  height: 30%;
-  width: 100%;
-  border: 1vw solid #537FE7;
-    border-style: none none inset none;
-}
-
-#about_design_4 {
-  position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 7%;
-    margin: 0 auto;
-  height: 30%;
-  width: 80%;
-  border: 1vw solid #537FE7;
-    border-style: none none inset none;
-}
-
 div.about_container {
   height: 40%;
   width: 70%;
-  position: absolute;
-    left: 0;
-    right: 0;
-    top: 10%;
-    margin: 0 auto;
+  position: relative;
+  margin: auto;
 }
 
 h1.about_container {
@@ -281,4 +232,99 @@ p.about_container {
   font: 300 1vw "Poppins", sans-serif;
   position: relative;
   margin: 0;
+}
+
+/* ----------------------- SKILLS PAGE ----------------------- */
+
+section.skills {
+  background-color: #181823;
+  height: 70vw;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 5%;
+}
+
+h1.skills {
+  color: #E9F8F9;
+  font: 500 4vw "Patua One", sans-serif;
+}
+
+div.skills_container {
+  position: relative;
+    margin-top: 0;
+    margin-inline: auto;
+  height: 57vw;
+  width: 90%;
+  text-align: center;
+}
+
+div.skill_block {
+  position: relative;
+  background-color: #E9F8F9;
+  border-radius: 2vw;
+  height: 35%;
+  width: 15%;
+  display: inline-flex;
+  margin-inline: 2%;
+  margin-top: 3%;
+  transition-duration: 200ms;
+}
+
+div.skill_block:hover {
+  transform: scale(1.05);
+}
+
+div.skill_block_design_1 {
+  background-color: #537FE7;
+  position: absolute;
+    bottom: 0;
+  height: 50%;
+  width: 100%;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  border-top-right-radius: 2vw;
+  text-align: center;
+}
+
+div.skill_block_design_2 {
+  background-color: #537FE7;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+}
+
+div.skill_block_design_3 {
+  background-color: #E9F8F9;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+
+img.skill_block {
+  position: relative;
+  height: 5vw;
+  width: 5vw;
+  margin-top: 20%;
+  margin-inline: auto;
+  z-index: 1;
+}
+
+h1.skill_block_text {
+  color: #E9F8F9;
+  font: 500 1.75vw "Poppins", sans-serif;
+  margin: 5% 0 0 10%;
+  text-align: left;
+}
+
+p.skill_block_text {
+  color: #E9F8F9;
+  font: 200 1vw "Poppins", sans-serif;
+  margin: 6% 0 0 10%;
+  text-align: left;
 }
