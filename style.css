@@ -59,61 +59,18 @@ img {
 }
 
 .home_design_container {
-  box-shadow: 0 0.5vw 1.25vw #00ADB5;
-  border-radius: 5vw;
-  background-color: #393E46;
+  box-shadow: 0 0 1.25vw #00ADB5;
+  border-radius: 20vw;
+  border: 0.25vw solid #393E46;
+  background-color: #222831;
   height: 80%;
-  width: 95%;
+  width: 90%;
   position: absolute;
     top: 10%;
     left: 0;
     right: 0;
     margin: 0 auto;
 }
-
-/* #home_design_1 {
-  position: absolute;
-    top: 0;
-    left: 0;
-  height: 80%;
-  width: 91.5%;
-  border: 1vw solid #537FE7;
-  border-radius: 5vw;
-  border-style: inset none none inset;
-}
-
-#home_design_3 {
-  position: absolute;
-    top: 4%;
-    left: 1.75%;
-  height: 76%;
-  width: 89.7%;
-  border: 1vw solid #537FE7;
-  border-radius: 4vw;
-  border-style: inset none none inset;
-}
-
-#home_design_2 {
-  position: absolute;
-    bottom: 0;
-    right: 0;
-  height: 80%;
-  width: 91.5%;
-  border: 1vw solid #537FE7;
-  border-radius: 5vw;
-  border-style: none inset inset none;
-}
-
-#home_design_4 {
-  position: absolute;
-    bottom: 4%;
-    right: 1.75%;
-  height: 76%;
-  width: 89.75%;
-  border: 1vw solid #537FE7;
-  border-radius: 4vw;
-  border-style: none inset inset none;
-} */
 
 div.home_container {
   height: 20%;
@@ -213,6 +170,7 @@ section.about {
   background-attachment: fixed;
   background-size: cover;
   border-radius: 5vw;
+  border: 0.25vw solid #555c68;
   height: 25vw;
   width: 95%;
   margin-top: 5%;
@@ -325,16 +283,33 @@ img.skill_block {
   z-index: 1;
 }
 
-h1.skill_block_text {
+h1.skill_block {
   color: #E9F8F9;
   font: 500 1.75vw "Poppins", sans-serif;
   margin: 5% 0 0 10%;
   text-align: left;
 }
 
-p.skill_block_text {
+p.skill_block {
   color: #E9F8F9;
-  font: 200 1vw "Poppins", sans-serif;
-  margin: 6% 0 0 10%;
+  font: 300 1vw "Poppins", sans-serif;
+  margin: 0 0 0 10%;
   text-align: left;
+}
+
+button.skill_block {
+  background-color: #222831;
+  color: #E9F8F9;
+  font: 300 1vw "Poppins", sans-serif;
+  margin-top: 10%;
+  border: none;
+  border-radius: 2vw;
+  transition-duration: 0.1s;
+  height: 25%;
+  width: 80%;
+}
+
+button.skill_block:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
