@@ -20,10 +20,10 @@ body {
 }
 
 .navbar a {
-  text-decoration: none;
   color: #30475E;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  text-decoration: none;
 }
 
 .navbar a:hover {color: white;}
@@ -93,18 +93,14 @@ body {
 
 .titles h1 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5vw;
-  font-weight: 500;
+  font: 600 3.5vw 'Montserrat', sans-serif;
   margin: 17% 0 0 0;
   position: relative;
 }
 
 .titles h2 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5vw;
-  font-weight: 300;
+  font: 300 1.5vw 'Rubik', sans-serif;
   margin: 1% 0 0 0;
   position: relative;
 }
@@ -113,9 +109,7 @@ body {
   background-color: #F05454;
   border: none;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25vw;
-  font-weight: 400;
+  font: 400 1.25vw 'Rubik', sans-serif;
   height: 15%;
   margin: 2.5% 0 0 0;
   transition-duration: 0.1s;
