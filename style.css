@@ -21,13 +21,12 @@ img {
 /* ----------------------- NAVIGATION ----------------------- */
 
 .navbar {
-  background-color: #222831;
   display: flex;
   justify-content: right;
   list-style: none;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -50,78 +49,74 @@ img {
 /* ----------------------- HOME PAGE ----------------------- */
 
 .home {
-  background-color: #222831;
-  height: 50vw;
-  padding-bottom: 5%;
-  padding: 0;
-  position: relative;
+  background-image: url('elements/images/night_time_bg.jpg');
+  background-size: cover;
+  height: 100vh;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home_design_container {
-  box-shadow: 0 0 1.25vw #00ADB5;
+.home_container {
+  background: rgba(17, 17, 17, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 5vw;
-  border: 0.25vw solid #393E46;
-  background-color: #222831;
-  height: 80%;
-  width: 90%;
-  position: absolute;
-    top: 10%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  box-shadow: 0 0.75vh 5vh rgb(0, 0, 0);
+  display: flex;
+  height: 70%;
+  width: 85%;
 }
 
-div.home_container {
-  height: 20%;
-  margin-inline: auto;
-  position: absolute;
-    bottom: 0;
-    left: 5%;
-  text-align: center;
-  width: 90%;
+.home_image_container {
+  height: 100%;
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  right: 5%;
 }
 
-img.home_container {
-  background-color: #222831;
-  border: 1vw solid #00ADB5;
-    border-radius: 5vw;
-    border-style: inset;
-  position: absolute;
-    bottom: 90%;
-    left: 6%;
+.home_image_container img {
   height: 30vw;
   width: 30vw;
-  z-index: 2;
+  border-radius: 100%;
+  background-image: url('elements/images/night_time_bg.jpg');
+  background-size: cover;
 }
 
-.home_headings {
-  position: absolute;
-    bottom: 15vw;
-    right: 3%;
-  height: 180%;
-  width: 50%;
-  text-align: left;
-  z-index: 2;
+.home_heading_container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  width: 55%;
 }
 
-.home_headings h1 {
+.home_heading_container h1 {
   color: white;
+  position: relative;
   font: 500 4vw "Patua One", sans-serif;
-  margin: 0;
+  margin: 0%;
 }
 
-.home_headings p {
+.home_heading_container p {
   color: white;
+  position: relative;
   font: 300 1vw "Poppins", sans-serif;
-  margin: 0;
+  margin: 0%;
+  width: 85%;
 }
 
-.home_headings button{
+.home_heading_container button{
   background-color: #00ADB5;
   color: #E9F8F9;
   font: 300 1vw "Poppins", sans-serif;
-  margin-top: 3%;
+  margin-block: 10%;
   border: none;
   border-radius: 2vw;
   transition-duration: 0.1s;
@@ -129,18 +124,17 @@ img.home_container {
   padding-block: 1vw;
 }
 
-  .home_headings button:hover {
+  .home_heading_container button:hover {
     box-shadow: 0 0 0.75vw #00ADB5;
     cursor: pointer;
     transform: scale(1.025);
   }
 
-  .home_headings button:active {
+  .home_heading_container button:active {
     transform: scale(1.0);
   }
 
 .home_links {
-  margin-top: 3%;
   height: 10%;
   width: 100%;
 }
@@ -157,11 +151,13 @@ img.home_container {
   transition-duration: 200ms;
 }
 
-.home_links img:hover {
-  box-shadow: 0 0 0.75vw #00ADB5;
-  transform: scale(1.2);
-}
+  .home_links img:hover {
+    transform: scale(1.2);
+  }
 
+
+
+  
 /* ----------------------- ABOUT PAGE ----------------------- */
 
 section.about {
