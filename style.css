@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #222831;
+  background-color: white;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -57,6 +57,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .home_container {
@@ -64,7 +65,7 @@ img {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 5vw;
-  box-shadow: 0 0.75vh 5vh rgb(0, 0, 0);
+  box-shadow: 0 0 3vh #00ADB5;
   display: flex;
   height: 70%;
   width: 85%;
@@ -155,102 +156,95 @@ img {
     transform: scale(1.2);
   }
 
-
-
-  
 /* ----------------------- ABOUT PAGE ----------------------- */
 
-section.about {
-  height: 30vw;
+.about {
+  background: rgb(176,48,176);
+  background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 40%, rgba(32,32,96,1) 100%);  position: relative;
+  height: 40vw;
   width: 100%;
-  margin-top: 5%;
-  margin-inline: auto;
-  padding: 5% 0 5% 0;
+  display: flex;
+  align-items: center;
 }
 
-div.about_container {
-  background-image: url("elements/images/night_time_bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  border-radius: 5vw;
-  border: 0.25vw solid #555c68;
-  height: 95%;
-  width: 90%;
-  position: relative;
-  margin: auto;
-  box-shadow: 0 0 0.75vw #00ADB5;
-}
-
-h1.about_container {
-  color: #E9F8F9;
-  text-align: center;
+.section_title {
+  color: white;
   font: 500 4vw "Patua One", sans-serif;
-  position: relative;
-  padding: 0;
-  margin: 5% 0 3% 0;
-}
-
-div.about_p_container {
-  height: 100%;
-  width: 80%;
-  position: relative;
-  margin-inline: auto;
-  margin-block: 0;
-}
-
-p.about_container {
-  color: #E9F8F9;
-  text-align: center;
-  font: 300 1vw "Poppins", sans-serif;
-  position: relative;
   margin: 0;
+}
+
+.about_content_container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.about_content_container p {
+  color: white;
+  font: 300 1vw "Poppins", sans-serif;
+}
+
+.about_image_container {
+  height: 100%;
+  width: 45%;
+}
+
+.about_image_container img {
+  height: 95%;
+  position: absolute;
+  bottom: 0;
 }
 
 /* ----------------------- SKILLS PAGE ----------------------- */
 
-section.skills {
-  height: 143vw;
+.skills {
+  height: fit-content;
   width: 100%;
-  text-align: center;
-  margin: 0;
-  padding-top: 1%;
-}
-
-h1.skills {
-  color: #E9F8F9;
-  font: 500 4vw "Patua One", sans-serif;
+  background-image: url('elements/images/wallpaper_skills.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.skills_container {
-  position: relative;
-    margin-top: 0;
-    margin-inline: auto;
+  background: rgba(17, 17, 17, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-top: 5%;
   border: 0.25vw solid #555c68;
   border-radius: 5vw;
   box-shadow: 0 0 1.25vw #00ADB5;
-  height: 125vw;
+  height: fit-content;
   width: 90%;
   text-align: center;
+  padding-block: 5vh;
 }
 
 div.skills_programming_container {
   margin: 0;
   position: relative;
-  height: 51vw;
+  height: fit-content;
   width: 100%;
 }
 
 div.skills_design_container {
   margin-top: 3%;
-  height: 29vw;
+  height: fit-content;
   width: 100%;
   position: relative;
 }
 
 div.skills_others_container {
   margin-top: 3%;
-  height: 29vw;
+  height: fit-content;
   width: 100%;
   position: relative;
 }
@@ -259,7 +253,7 @@ h1.skills_container {
   color: white;
   font: 500 2.25vw "Poppins", sans-serif;
   text-align: center;
-  margin: 5% 0 0 0;
+  margin: 0;
 }
 
 div.skill_block {
@@ -295,7 +289,7 @@ div.skill_block_design_2 {
   background-color: #00ADB5;
   position: absolute;
   height: 50%;
-  width: 100%;
+  width: 50%;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
 }
@@ -357,3 +351,44 @@ button.skill_block {
   button.skill_block:active {
     transform: scale(1);
   }
+
+/* ----------------------- WORK PAGE ----------------------- */
+
+.work {
+  height: fit-content;
+  width: 100%;
+  padding-block: 5%;
+  background: rgb(176,48,176);
+background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 50%, rgba(32,32,96,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_container {
+  height: fit-content;
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+}
+
+.work_block {
+  height: fit-content;
+  width: 50%;
+}
+
+.work_block, h1, h2, h3, p, li {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 1%;
+}
+
+.work_block h1 {
+  font-size: 1.75vw;
+}
+
+.work_block, h2, h3 {
+  font-size: 1.25vw;
+  font-weight: 300;
+}
