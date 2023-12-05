@@ -35,7 +35,7 @@ img {
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: #00ADB5;
   font-family: 'Poppins', sans-serif;
   font-size: 1vw;
   text-align: center;
@@ -49,7 +49,6 @@ img {
 /* ----------------------- HOME PAGE ----------------------- */
 
 .home {
-  background-image: url('elements/images/home_bg.jpg');
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -61,56 +60,51 @@ img {
 }
 
 .home_container {
-  background: rgba(17, 17, 17, 0.25);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background: white;
+  box-shadow: 0 0.25em 0.5em #4E4C5A;
   border-radius: 5vw;
-  box-shadow: 0 0 3vh #00ADB5;
   display: flex;
-  height: 70%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
   width: 85%;
+  padding-block: 3%;
 }
 
 .home_image_container {
-  height: 100%;
-  width: 45%;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  right: 5%;
+  height: fit-content;
+  width: fit-content;
 }
 
 .home_image_container img {
   height: 30vw;
   width: 30vw;
   border-radius: 100%;
-  background-image: url('elements/images/night_time_bg.jpg');
   background-size: cover;
 }
 
 .home_heading_container {
   display: flex;
-  justify-content: center;
   align-items: start;
   flex-direction: column;
-  height: 100%;
-  width: 55%;
+  padding-left: 3%;
+  height: fit-content;
+  width: 52%;
 }
 
 .home_heading_container h1 {
-  color: white;
+  color: #00ADB5;
   position: relative;
   font: 500 4vw "Patua One", sans-serif;
   margin: 0%;
 }
 
 .home_heading_container p {
-  color: white;
+  color: #4E4C5A;
   position: relative;
-  font: 300 1vw "Poppins", sans-serif;
+  font: 400 1vw "Poppins", sans-serif;
   margin: 0%;
-  width: 85%;
+  width: 90%;
 }
 
 .home_heading_container button{
@@ -126,13 +120,10 @@ img {
 }
 
   .home_heading_container button:hover {
-    box-shadow: 0 0 0.75vw #00ADB5;
     cursor: pointer;
-    transform: scale(1.025);
-  }
-
-  .home_heading_container button:active {
-    transform: scale(1.0);
+    color: #00ADB5;
+    outline: 0.25em solid #00ADB5;
+    background-color: white;
   }
 
 .home_links {
@@ -159,8 +150,8 @@ img {
 /* ----------------------- ABOUT PAGE ----------------------- */
 
 .about {
-  background: rgb(176,48,176);
-  background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 40%, rgba(32,32,96,1) 100%);  position: relative;
+  background: rgb(0,173,181);
+  position: relative;
   height: 40vw;
   width: 100%;
   display: flex;
@@ -359,7 +350,7 @@ button.skill_block {
   width: 100%;
   padding-block: 5%;
   background: rgb(176,48,176);
-background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 50%, rgba(32,32,96,1) 100%);
+  background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 50%, rgba(32,32,96,1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,7 +369,7 @@ background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 50%,
   width: 50%;
 }
 
-div.work_block > h1, h2, h3, li, p, a{
+div.work_block *{
   color: white;
   font-family: 'Poppins', sans-serif;
   margin-right: 1%;
