@@ -27,10 +27,32 @@ img {
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 0;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 3;
+}
+
+.nav_logo {
+  padding-inline: 2%;
+  padding-block: 0.75%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+nav p {
+  color: #00ADB5;
+  font-family: 'Patua One', sans-serif;
+  font-size: 2vw;
+  margin: 0;
+}
+
+nav img {
+  height: 2vw;
+  width: 2vw;
+  margin-right: 5%;
 }
 
 .navbar a {
