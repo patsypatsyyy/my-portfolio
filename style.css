@@ -40,6 +40,7 @@ img {
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 3;
 }
 
 nav p {
@@ -71,6 +72,7 @@ nav img {
 /* ----------------------- HOME PAGE ----------------------- */
 
 .home {
+  background-color: #F6F4EB;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -217,9 +219,7 @@ nav img {
 .skills {
   height: fit-content;
   width: 100%;
-  background-image: url('elements/images/skills_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #F6F4EB;
   padding-block: 5%;
   display: flex;
   flex-direction: column;
@@ -227,14 +227,18 @@ nav img {
   align-items: center;
 }
 
+.section_title_2 {
+  color: #00ADB5  ;
+  font: 500 4vw "Patua One", sans-serif;
+  margin: 0;
+}
+
 div.skills_container {
-  background: rgba(17, 17, 17, 0.25);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color: white;
   margin-top: 5%;
   border: 0.25vw solid #555c68;
   border-radius: 5vw;
-  box-shadow: 0 0 1.25vw #00ADB5;
+  box-shadow: 0 0.25em 0.5em #4E4C5A;
   height: fit-content;
   width: 90%;
   text-align: center;
@@ -263,7 +267,7 @@ div.skills_others_container {
 }
 
 h1.skills_container {
-  color: white;
+  color: #00ADB5;
   font: 500 2.25vw "Poppins", sans-serif;
   text-align: center;
   margin: 0;
@@ -271,19 +275,19 @@ h1.skills_container {
 
 div.skill_block {
   position: relative;
-  background-color: #E9F8F9;
+  background-color: #F6F4EB;
+  border: 0.25vh solid #222831;
   border-radius: 2vw;
   height: 20vw;
   width: 15%;
   display: inline-flex;
-  margin-inline: 2%;
+  margin-inline: 1%;
   margin-top: 3%;
   transition-duration: 200ms;
 }
 
   div.skill_block:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 0.75vw #00ADB5
   }
 
 div.skill_block_design_1 {
@@ -308,7 +312,7 @@ div.skill_block_design_2 {
 }
 
 div.skill_block_design_3 {
-  background-color: #E9F8F9;
+  background-color: #F6F4EB;
   position: absolute;
   height: 50%;
   width: 100%;
@@ -327,14 +331,14 @@ img.skill_block {
 }
 
 h1.skill_block {
-  color: #E9F8F9;
+  color: white;
   font: 500 1.75vw "Poppins", sans-serif;
   margin: 5% 0 0 10%;
   text-align: left;
 }
 
 p.skill_block {
-  color: #E9F8F9;
+  color: white;
   font: 300 1vw "Poppins", sans-serif;
   margin: 0 0 0 10%;
   text-align: left;
@@ -371,8 +375,7 @@ button.skill_block {
   height: fit-content;
   width: 100%;
   padding-block: 5%;
-  background: rgb(176,48,176);
-  background: linear-gradient(50deg, rgba(176,48,176,1) 0%, rgba(96,32,128,1) 50%, rgba(32,32,96,1) 100%);
+  background-color: #00ADB5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,13 +421,13 @@ div.work_block *{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 5%;
+  padding-block: 3%;
 }
 
 .contact_content_container {
   height: fit-content;
   width: fit-content;
-  margin-top: 3%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,7 +436,7 @@ div.work_block *{
 .contact_block {
   background-color: white;
   height: fit-content;
-  width: 17vw; 
+  width: 13vw; 
   border-radius: 5vw;
   display: flex;
   align-items: center;
@@ -447,8 +450,8 @@ div.work_block *{
 
 .contact_block img {
   margin-left: 3%;
-  height: 4vw;
-  width: 4vw;
+  height: 3vw;
+  width: 3vw;
   margin-block: 2%;
 }
 
@@ -456,6 +459,6 @@ div.work_block *{
   color: black;
   text-decoration: none;
   margin-left: 0;
-  font: 500 1vw "Poppins";
+  font: 500 0.75vw "Poppins";
   margin-inline: 2%;
 }
