@@ -6,7 +6,6 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 img {
@@ -43,14 +42,14 @@ img {
   z-index: 3;
 }
 
-nav p {
+.nav_logo p {
   color: #00ADB5;
   font-family: 'Patua One', sans-serif;
   font-size: 2vw;
   margin: 0;
 }
 
-nav img {
+.nav_logo img {
   height: 2vw;
   width: 2vw;
   margin-right: 5%;
@@ -68,13 +67,66 @@ nav img {
 .navbar li {padding: 1vw; transition-duration: 0.2s}
 .navbar li:hover {background-color: #00ADB5;}
 
+@media screen and (max-width: 430px){
+  nav {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .nav_logo {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding-inline: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav_logo p {
+    font: 300 3vh "Patua One";
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav_logo img {
+    height: 3vh;
+    width: 3vh;
+  }
+  
+  .navbar {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+  }  
+
+  .navbar a {
+    margin-inline: 2%;
+    text-decoration: none;
+    color: #00ADB5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    text-align: center;
+  }
+}
 
 /* ----------------------- HOME PAGE ----------------------- */
 
 .home {
   background-color: #F6F4EB;
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   position: relative;
   display: flex;
@@ -171,6 +223,98 @@ nav img {
     transform: scale(1.2);
   }
 
+@media screen and (max-width: 430px){
+  .home_container {
+    margin-top: 10%;
+    height: 75%;
+    width: 85%;
+    background: white;
+    box-shadow: 0 0.25em 0.5em #4E4C5A;
+    border-radius: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .home_image_container img {
+    height: 35vh;
+    width: 35vh;
+    border-radius: 100%;
+    background-size: cover;
+    margin-block: 5%;
+  }
+
+  .home_heading_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 3%;
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .home_heading_container h1 {
+    color: #00ADB5;
+    position: relative;
+    font: 500 4.5vh "Patua One", sans-serif;
+    margin-block: 1%;
+  }
+  
+  .home_heading_container p {
+    color: #4E4C5A;
+    position: relative;
+    font: 400 1.25vh "Poppins", sans-serif;
+    text-align: center;
+    margin: 0 0 1%;
+    width: 80%;
+  }
+  
+  .home_heading_container button{
+    background-color: #00ADB5;
+    color: #E9F8F9;
+    font: 300 2vh "Poppins", sans-serif;
+    margin-block: 10%;
+    border: none;
+    border-radius: 5vw;
+    transition-duration: 0.1s;
+    padding-inline: 5vh;
+    padding-block: 1vh;
+  }
+  
+  .home_heading_container button:hover {
+    cursor: pointer;
+    color: #00ADB5;
+    outline: 0.25em solid #00ADB5;
+    background-color: white;
+  }
+  
+  .home_links {
+    margin-block: 5%;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_links a {
+    display: inline;
+    margin-inline: 2%;
+  }
+  
+  .home_links img {
+    border-radius: 100%;
+    height: 5vh;
+    width: 5vh;
+    transition-duration: 200ms;
+  }
+  
+    .home_links img:hover {
+      transform: scale(1.2);
+    }
+}
+
 /* ----------------------- ABOUT PAGE ----------------------- */
 
 .about {
@@ -236,7 +380,6 @@ nav img {
 div.skills_container {
   background-color: white;
   margin-top: 5%;
-  border: 0.25vw solid #555c68;
   border-radius: 5vw;
   box-shadow: 0 0.25em 0.5em #4E4C5A;
   height: fit-content;
