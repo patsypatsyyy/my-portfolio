@@ -224,8 +224,13 @@ img {
   }
 
 @media screen and (max-width: 430px){
+  .home {
+    height: 100svh;
+  }
+
   .home_container {
     margin-top: 10%;
+    padding: 0;
     height: 75%;
     width: 85%;
     background: white;
@@ -233,7 +238,7 @@ img {
     border-radius: 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 
@@ -257,7 +262,7 @@ img {
   .home_heading_container h1 {
     color: #00ADB5;
     position: relative;
-    font: 500 4.5vh "Patua One", sans-serif;
+    font: 500 3.5vh "Patua One", sans-serif;
     margin-block: 1%;
   }
   
@@ -305,8 +310,8 @@ img {
   
   .home_links img {
     border-radius: 100%;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     transition-duration: 200ms;
   }
   
