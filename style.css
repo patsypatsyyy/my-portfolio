@@ -78,6 +78,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0;
+    background-color: #limegreen;
   }
   
   .nav_logo {
@@ -226,6 +227,8 @@ img {
 @media screen and (max-width: 430px){
   .home {
     height: 100svh;
+    position: relative;
+
   }
 
   .home_container {
@@ -287,15 +290,18 @@ img {
     font: 500 12px "Poppins", sans-serif;
     margin-block: 5%;
     border: none;
-    border-radius: 5vw;
+    border-radius: 1.5vh;
     transition-duration: 0.1s;
   }
   
   .home_heading_container button:hover {
-    cursor: pointer;
-    color: #00ADB5;
-    outline: 0.25em solid #00ADB5;
-    background-color: white;
+    color: white;
+    outline: none;
+    background-color: #00ADB5;
+  }
+
+  .home_heading_container button:active {
+    transform: scale(0.95);
   }
   
   .home_links {
@@ -321,8 +327,13 @@ img {
   }
   
     .home_links img:hover {
-      transform: scale(1.2);
+      transform: scale(1.0);
     }
+
+    .home_links img:active {
+      transform: scale(0.90);
+    }
+
 }
 
 /* ----------------------- ABOUT PAGE ----------------------- */
@@ -385,7 +396,6 @@ img {
     width: 80%;
     margin: 0;
     text-align: center;
-    background-color: limegreen;
   }
 
   .about_content_container p {
@@ -469,7 +479,68 @@ img {
   width: 8vw;
 }
 
+@media screen and (max-width: 430px){
 
+  .skills {
+    height: fit-content;
+    padding-block: 5%;
+  }
+
+  .skills_container {
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0 0 0;
+  }
+
+  .skill_title {
+    font: 500 16px "Poppins", sans-serif;
+    color: #00ADB5;
+  }
+
+  .skill_category {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill_block {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 5%;
+  }
+
+  .skill_block p {
+    color: black;
+    font: 500 8px 'Poppins', sans-serif;
+  }
+
+  .skill_image_container {
+    background-color: white;
+    border-radius: 10%;
+    padding: 20%;
+    transition-duration: 200ms;
+  }
+
+    .skill_image_container:hover {
+      box-shadow: none;
+    }
+
+  .skill_image_container img {
+    height: 8vh;
+    width: 8vh;
+  }
+
+}
 
 /* ----------------------- WORK PAGE ----------------------- */
 
@@ -510,6 +581,42 @@ div.work_block *{
 .work_block, h2, h3 {
   font-size: 1.25vw;
   font-weight: 300;
+}
+
+@media screen and (max-width: 430px){
+
+  .work_container {
+    height: fit-content;
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .work_block {
+    height: fit-content;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  div.work_block *{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1%;
+    margin-block: 1%;
+  }
+
+  .work_block h1 {
+    font-size: 18px;
+  }
+
+  .work_block, h2, h3 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
 }
 
 /* ----------------------- CONTACT PAGE ----------------------- */
