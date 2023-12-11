@@ -78,6 +78,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0;
+    background-color: #limegreen;
   }
   
   .nav_logo {
@@ -137,7 +138,7 @@ img {
 
 .home_container {
   background: white;
-  box-shadow: 0 0.25em 0.5em #4E4C5A;
+  box-shadow: 0 5px 10px 3px #dddddd;
   border-radius: 5vw;
   display: flex;
   justify-content: center;
@@ -226,6 +227,8 @@ img {
 @media screen and (max-width: 430px){
   .home {
     height: 100svh;
+    position: relative;
+
   }
 
   .home_container {
@@ -287,15 +290,18 @@ img {
     font: 500 12px "Poppins", sans-serif;
     margin-block: 5%;
     border: none;
-    border-radius: 5vw;
+    border-radius: 1.5vh;
     transition-duration: 0.1s;
   }
   
   .home_heading_container button:hover {
-    cursor: pointer;
-    color: #00ADB5;
-    outline: 0.25em solid #00ADB5;
-    background-color: white;
+    color: white;
+    outline: none;
+    background-color: #00ADB5;
+  }
+
+  .home_heading_container button:active {
+    transform: scale(0.95);
   }
   
   .home_links {
@@ -321,14 +327,19 @@ img {
   }
   
     .home_links img:hover {
-      transform: scale(1.2);
+      transform: scale(1.0);
     }
+
+    .home_links img:active {
+      transform: scale(0.90);
+    }
+
 }
 
 /* ----------------------- ABOUT PAGE ----------------------- */
 
 .about {
-  background: rgb(0,173,181);
+  background: #00ADB5;
   position: relative;
   height: 40vw;
   width: 100%;
@@ -368,159 +379,168 @@ img {
   bottom: 0;
 }
 
+@media screen and (max-width: 430px){
+  .about {
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    padding-block: 24px;
+  }
+
+  .about_image_container, .about_image_container img {
+    display: none;
+  }
+
+  .about_content_container {
+    height: 90%;
+    width: 80%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .about_content_container p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .section_title {
+    margin-inline: auto;
+    font-size: 20px;
+  }
+}
+
 /* ----------------------- SKILLS PAGE ----------------------- */
 
 .skills {
   height: fit-content;
   width: 100%;
-  background-color: #F6F4EB;
-  padding-block: 5%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.section_title_2 {
-  color: #00ADB5  ;
-  font: 500 4vw "Patua One", sans-serif;
-  margin: 0;
-}
-
-div.skills_container {
-  background-color: white;
-  margin-top: 5%;
-  border-radius: 5vw;
-  box-shadow: 0 0.25em 0.5em #4E4C5A;
-  height: fit-content;
-  width: 90%;
-  text-align: center;
-  padding-block: 5vh;
-}
-
-div.skills_programming_container {
-  margin: 0;
-  position: relative;
-  height: fit-content;
-  width: 100%;
-}
-
-div.skills_design_container {
-  margin-top: 3%;
-  height: fit-content;
-  width: 100%;
-  position: relative;
-}
-
-div.skills_others_container {
-  margin-top: 3%;
-  height: fit-content;
-  width: 100%;
-  position: relative;
-}
-
-h1.skills_container {
-  color: #00ADB5;
-  font: 500 2.25vw "Poppins", sans-serif;
-  text-align: center;
-  margin: 0;
-}
-
-div.skill_block {
-  position: relative;
+  flex-direction: column;
+  padding-block: 5%;
   background-color: #F6F4EB;
-  border: 0.25vh solid #222831;
-  border-radius: 2vw;
-  height: 20vw;
-  width: 15%;
-  display: inline-flex;
-  margin-inline: 1%;
-  margin-top: 3%;
+}
+
+.skills .section_title {
+  color: #00ADB5;
+}
+
+.skills_container {
+  height: fit-content;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 0 0 0;
+}
+
+.skill_title {
+  font: 500 2vw "Poppins", sans-serif;
+  color: #00ADB5;
+}
+
+.skill_category {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skill_block {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 3%;
+}
+
+.skill_block p {
+  color: black;
+  font: 500 1vw 'Poppins', sans-serif;
+}
+
+.skill_image_container {
+  background-color: white;
+  border-radius: 10%;
+  padding: 20%;
   transition-duration: 200ms;
 }
 
-  div.skill_block:hover {
-    transform: scale(1.05);
+  .skill_image_container:hover {
+    box-shadow: 0 5px 10px 3px #dddddd;
   }
 
-div.skill_block_design_1 {
-  background-color: #00ADB5;
-  position: absolute;
-    bottom: 0;
-  height: 50%;
-  width: 100%;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  border-top-right-radius: 2vw;
-  text-align: center;
+.skill_image_container img {
+  height: 8vw;
+  width: 8vw;
 }
 
-div.skill_block_design_2 {
-  background-color: #00ADB5;
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
-}
+@media screen and (max-width: 430px){
 
-div.skill_block_design_3 {
-  background-color: #F6F4EB;
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-}
-
-img.skill_block {
-  position: relative;
-  height: 5vw;
-  width: 5vw;
-  margin-top: 20%;
-  margin-inline: auto;
-  z-index: 1;
-}
-
-h1.skill_block {
-  color: white;
-  font: 500 1.75vw "Poppins", sans-serif;
-  margin: 5% 0 0 10%;
-  text-align: left;
-}
-
-p.skill_block {
-  color: white;
-  font: 300 1vw "Poppins", sans-serif;
-  margin: 0 0 0 10%;
-  text-align: left;
-}
-
-button.skill_block {
-  background-color: #222831;
-  color: #E9F8F9;
-  font: 300 1vw "Poppins", sans-serif;
-  position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 9%;
-  border: none;
-  border-radius: 2vw;
-  transition-duration: 0.1s;
-  width: 85%;
-  padding-block: 0.75vw;
-}
-
-  button.skill_block:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  .skills {
+    height: fit-content;
+    padding-block: 5%;
   }
 
-  button.skill_block:active {
-    transform: scale(1);
+  .skills_container {
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0 0 0;
   }
+
+  .skill_title {
+    font: 500 16px "Poppins", sans-serif;
+    color: #00ADB5;
+  }
+
+  .skill_category {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill_block {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 5%;
+  }
+
+  .skill_block p {
+    color: black;
+    font: 500 8px 'Poppins', sans-serif;
+  }
+
+  .skill_image_container {
+    background-color: white;
+    border-radius: 10%;
+    padding: 20%;
+    transition-duration: 200ms;
+  }
+
+    .skill_image_container:hover {
+      box-shadow: none;
+    }
+
+  .skill_image_container img {
+    height: 8vh;
+    width: 8vh;
+  }
+
+}
 
 /* ----------------------- WORK PAGE ----------------------- */
 
@@ -561,6 +581,42 @@ div.work_block *{
 .work_block, h2, h3 {
   font-size: 1.25vw;
   font-weight: 300;
+}
+
+@media screen and (max-width: 430px){
+
+  .work_container {
+    height: fit-content;
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .work_block {
+    height: fit-content;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  div.work_block *{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1%;
+    margin-block: 1%;
+  }
+
+  .work_block h1 {
+    font-size: 10px;
+  }
+
+  .work_block, h2, h3 {
+    font-size: 8px;
+    font-weight: 300;
+  }
+
 }
 
 /* ----------------------- CONTACT PAGE ----------------------- */
@@ -614,4 +670,29 @@ div.work_block *{
   margin-left: 0;
   font: 500 0.75vw "Poppins";
   margin-inline: 2%;
+}
+
+@media screen and (max-width: 430px){
+
+  .contact_content_container {
+    flex-wrap: wrap;
+  }
+
+  .contact_block {
+    width: 64px;
+  }
+
+  .contact_content_container a {
+    font: 500 4px "Poppins";
+    margin-inline: 2%;
+    margin-block: 2%;
+  }
+
+  .contact_block img {
+    height: 16px;
+    width: 16px;
+    margin-block: 2%;
+    margin-inline: 3%;
+  }
+
 }
