@@ -405,7 +405,7 @@ img {
 
   .section_title {
     margin-inline: auto;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -609,11 +609,11 @@ div.work_block *{
   }
 
   .work_block h1 {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .work_block, h2, h3 {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 300;
   }
 
@@ -679,19 +679,18 @@ div.work_block *{
   }
 
   .contact_block {
-    width: 64px;
+    width: 120px;
   }
 
   .contact_content_container a {
-    font: 500 4px "Poppins";
+    font: 500 6px "Poppins";
     margin-inline: 2%;
-    margin-block: 2%;
+    margin-block: 1%;
   }
 
   .contact_block img {
-    height: 16px;
-    width: 16px;
-    margin-block: 2%;
+    height: 24px;
+    width: 24px;
     margin-inline: 3%;
   }
 
