@@ -609,11 +609,11 @@ div.work_block *{
   }
 
   .work_block h1 {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .work_block, h2, h3 {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 300;
   }
 
@@ -670,4 +670,29 @@ div.work_block *{
   margin-left: 0;
   font: 500 0.75vw "Poppins";
   margin-inline: 2%;
+}
+
+@media screen and (max-width: 430px){
+
+  .contact_content_container {
+    flex-wrap: wrap;
+  }
+
+  .contact_block {
+    width: 64px;
+  }
+
+  .contact_content_container a {
+    font: 500 4px "Poppins";
+    margin-inline: 2%;
+    margin-block: 2%;
+  }
+
+  .contact_block img {
+    height: 16px;
+    width: 16px;
+    margin-block: 2%;
+    margin-inline: 3%;
+  }
+
 }
